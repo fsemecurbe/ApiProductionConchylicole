@@ -10,6 +10,7 @@ def init_db():
 init_db()
 
 app = FastAPI(title="Production conchylicole", version="0.1")
+logger = logging.getLogger("my_app")
 
 @app.get("/")
 def read_root():
